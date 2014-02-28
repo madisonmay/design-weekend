@@ -49,7 +49,7 @@ jQuery(document).ready(function() {
         Countdown initializer
     */
     var now = new Date();
-    var countTo = 25 * 24 * 60 * 60 * 1000 + now.valueOf();    
+    var countTo = "2014/09/13";    
     $('.timer').countdown(countTo, function(event) {
     	$(this).find('.days').text(event.offset.totalDays);
     	$(this).find('.hours').text(event.offset.hours);
@@ -78,7 +78,7 @@ jQuery(document).ready(function() {
 	*/
 	$('.latest-tweets .tweets').tweet({
 		modpath: 'assets/twitter/',
-		username: 'anli_zaimi',
+		username: 'olinfoundry',
 		page: 1,
 		count: 5,
 		loading_text: 'loading ...'
@@ -107,7 +107,7 @@ jQuery(document).ready(function() {
     /*
 	    Google maps
 	*/
-    var position = new google.maps.LatLng(45.067883, 7.687231);
+    var position = new google.maps.LatLng(42.291977,-71.264409);
     $('.contact-address .map').gmap({'center': position, 'zoom': 15, 'disableDefaultUI':true, 'callback': function() {
             var self = this;
             self.addMarker({'position': this.get('map').getCenter() });	
