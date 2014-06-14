@@ -94,12 +94,12 @@ nav a:focus { color: #fff; }
 	display: inline-block;
 	width: 113px;
 	height: 110px;
-	background: url(../img/logo.png) center center no-repeat;
+	background: url(../img/rethink.svg) center center no-repeat;
 	text-indent: -99999px;
 }
 
 .coming-soon .logo a:before {
-	content: url(../img/logo-hover.png);
+	content: url(../img/rethink.svg);
 	width: 0;
 	height: 0;
 	visibility: hidden;
