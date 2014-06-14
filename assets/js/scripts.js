@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
     
     $('.about-container').backstretch("assets/img/backgrounds/2.jpg");
     
-    $('.whos-behind-container').backstretch("assets/img/backgrounds/4.jpg");
+    $('.whos-behind-container.image-background').backstretch("assets/img/backgrounds/4.jpg");
 
     /*
         Countdown initializer

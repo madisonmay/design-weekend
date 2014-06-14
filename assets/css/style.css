@@ -5,6 +5,10 @@ body {
     font-weight: 300;
 }
 
+.black-text {
+    color: #555 !important;
+}
+
 strong { font-weight: 700; }
 
 a, a:hover, a:focus {
