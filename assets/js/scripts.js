@@ -23,9 +23,9 @@ jQuery(document).ready(function() {
 		if(element_class == 'menu-top') { scroll_to = $(".coming-soon").offset().top; }
 		else if(element_class == 'menu-subscribe') { scroll_to = $(".subscribe").offset().top - nav_height - 60; }
 		else if(element_class == 'menu-project') { scroll_to = $(".about").offset().top - nav_height - 60; }
-		else if(element_class == 'menu-testimonials') { scroll_to = $(".testimonials").offset().top - nav_height - 60; }
-		else if(element_class == 'menu-about-us') { scroll_to = $(".whos-behind").offset().top - nav_height - 60; }
-		else if(element_class == 'menu-contact') { scroll_to = $(".contact").offset().top - nav_height - 60; }
+		else if(element_class == 'menu-mentors') { scroll_to = $(".mentors").offset().top - nav_height - 60; }
+		else if(element_class == 'menu-sponsors') { scroll_to = $(".sponsors").offset().top - nav_height - 60; }
+		else if(element_class == 'menu-summary') { scroll_to = $(".contact").offset().top - nav_height - 60; }
 		
 		if($(window).scrollTop() != scroll_to && element_class !== undefined) {
 			$('html, body').animate({scrollTop: scroll_to}, 1000);
