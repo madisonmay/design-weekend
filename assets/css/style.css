@@ -105,7 +105,7 @@ nav a:focus { color: #fff; }
 	height: 0;
 	visibility: hidden;
 }
-.coming-soon .logo a:hover { background-image: url(../img/logo-hover.png); }
+.coming-soon .logo a:hover { background-image: url(../img/rethink.svg); }
 
 .coming-soon h2 {
     font-size: 46px;
