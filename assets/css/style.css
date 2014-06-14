@@ -213,6 +213,11 @@ nav a:focus { color: #fff; }
 .coming-soon p.top-arrow i:hover:before { top: 40px; }
 .coming-soon p.top-arrow i:hover:after { top: 10px; }
 
+#olin-link { 
+    color:#fff;
+    text-decoration: underline;
+}
+
 
 /***** Subscription form *****/
 
