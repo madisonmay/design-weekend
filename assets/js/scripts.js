@@ -15,6 +15,20 @@ jQuery(document).ready(function() {
 		$('nav').slideUp(function(){ $('.show-menu a').fadeIn(); });
 	});
 	// navigation
+
+
+    $('.fa-chevron-down').on('click', function(e) {
+        e.preventDefault();
+        var element_class = $(this).attr('class');
+        var scroll_to = 0;
+        var nav_height = $('nav').height();
+        scroll_to = $(".subscribe").offset().top - nav_height;
+        
+        if($(window).scrollTop() != scroll_to && element_class !== undefined) {
+            $('html, body').animate({scrollTop: scroll_to}, 1000);
+        }
+    });
+
 	$('nav a').on('click', function(e) {
 		e.preventDefault();
 		var element_class = $(this).attr('class');
