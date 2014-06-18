@@ -313,6 +313,10 @@ nav a:focus { color: #fff; }
 	font-size: 18px;
     line-height: 32px;
 }
+.about-box-1-icon {
+    border: 1px solid #555;
+    border-radius: 100px;
+}
 
 .about-box-1 .about-box-1-icon {
     width: 140px;
@@ -326,16 +330,6 @@ nav a:focus { color: #fff; }
     -webkit-border-radius: 85px;
     border-radius: 85px;
     cursor: pointer;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-
-.about-box-1 .about-box-1-icon:hover {
-    background: none;
-    border: 1px solid #fff;
     -o-transition: all .3s;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
@@ -457,6 +451,11 @@ nav a:focus { color: #fff; }
 .whos-behind-box-1 p {
 	font-size: 18px;
     line-height: 32px;
+}
+
+.whos-behind-photo {
+    border: 1px solid #555;
+    border-radius: 100px;
 }
 
 .whos-behind-box-1 .whos-behind-photo {

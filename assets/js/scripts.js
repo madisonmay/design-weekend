@@ -39,6 +39,7 @@ jQuery(document).ready(function() {
 		else if(element_class == 'menu-project') { scroll_to = $(".about").offset().top - nav_height - 60; }
 		else if(element_class == 'menu-mentors') { scroll_to = $(".mentors").offset().top - nav_height - 60; }
 		else if(element_class == 'menu-sponsors') { scroll_to = $(".sponsors").offset().top - nav_height - 60; }
+        else if(element_class == 'menu-phases')  { scroll_to = $(".phases").offset().top - nav_height; }
 		else if(element_class == 'menu-summary') { scroll_to = $(".contact").offset().top - nav_height - 60; }
 		
 		if($(window).scrollTop() != scroll_to && element_class !== undefined) {
