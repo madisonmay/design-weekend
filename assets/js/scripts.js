@@ -46,6 +46,15 @@ jQuery(document).ready(function() {
 			$('html, body').animate({scrollTop: scroll_to}, 1000);
 		}
 	});
+
+    $('a.menu-summary').on('click', function(e) {
+        e.preventDefault();
+        var nav_height = $('nav').height();
+        scroll_to = $(".contact").offset().top - nav_height;
+        $('html, body').animate({scrollTop: scroll_to}, 1000);
+    })
+
+
 	
     /*
         Background slideshow
