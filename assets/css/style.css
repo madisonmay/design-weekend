@@ -41,6 +41,21 @@ nav {
     text-align: center;
 }
 
+.about a {
+    color: white;
+    text-decoration: underline;
+}
+
+.sponsors a {
+    color: #555;
+    text-decoration: underline;
+}
+
+.mentors a {
+    color: white;
+    text-decoration: underline;
+}
+
 nav a {
 	display: inline-block;
 	margin: 0 15px;

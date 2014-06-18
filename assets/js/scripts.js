@@ -65,9 +65,9 @@ jQuery(document).ready(function() {
     // , "assets/img/backgrounds/3.jpg"
     ], {duration: 3000, fade: 750});
     
-    $('.about-container').backstretch("assets/img/backgrounds/2.jpg");
+    $('.about-container').backstretch("assets/img/backgrounds/chalkboards/green.jpg");
     
-    $('.whos-behind-container.image-background').backstretch("assets/img/backgrounds/4.jpg");
+    $('.whos-behind-container.image-background').backstretch("assets/img/backgrounds/chalkboards/green.jpg");
 
     /*
         Countdown initializer
