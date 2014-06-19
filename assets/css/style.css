@@ -113,15 +113,15 @@ nav a:focus { color: #fff; }
 	display: inline-block;
 	width: 450px;
 	height: 150px;
-	background: url(../img/banner.png) center no-repeat;
     margin-bottom: -40px;
+	background: url(../img/banner.png) center no-repeat;
     background-size: contain;
 	text-indent: -99999px;
 }
 
 .coming-soon h2 {
     font-size: 46px;
-    font-weight: 100;
+    font-weight: 100;   
 }
 
 .coming-soon p {
