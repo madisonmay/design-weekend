@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
 	    Top menu
 	*/
 
-    $('nav').slideDown(); 
+    $('nav').show(); 
 
 	// $('.show-menu a, .hide-menu a').tooltip();
 	// // show/hide menu
