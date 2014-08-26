@@ -1,11 +1,11 @@
 
 jQuery(document).ready(function() {
-	
+
     /*
 	    Top menu
 	*/
 
-    $('nav').show(); 
+    $('nav').show();
 
 	// $('.show-menu a, .hide-menu a').tooltip();
 	// // show/hide menu
@@ -26,7 +26,7 @@ jQuery(document).ready(function() {
         var scroll_to = 0;
         var nav_height = $('nav').height();
         scroll_to = $(".subscribe").offset().top - nav_height;
-        
+
         if($(window).scrollTop() != scroll_to && element_class !== undefined) {
             $('html, body').animate({scrollTop: scroll_to}, 1000);
         }
@@ -44,7 +44,7 @@ jQuery(document).ready(function() {
 		else if(element_class == 'menu-sponsors') { scroll_to = $(".sponsors").offset().top - nav_height - 60; }
         else if(element_class == 'menu-phases')  { scroll_to = $(".phases").offset().top - nav_height; }
 		else if(element_class == 'menu-summary') { scroll_to = $(".contact").offset().top - nav_height - 60; }
-		
+
 		if($(window).scrollTop() != scroll_to && element_class !== undefined) {
 			$('html, body').animate({scrollTop: scroll_to}, 1000);
 		}
@@ -58,7 +58,7 @@ jQuery(document).ready(function() {
     })
 
 
-	
+
     /*
         Background slideshow
     */
@@ -67,29 +67,29 @@ jQuery(document).ready(function() {
     // , "assets/img/backgrounds/2.jpg"
     // , "assets/img/backgrounds/3.jpg"
     ], {duration: 3000, fade: 750});
-    
+
     $('.about-container').backstretch("assets/img/backgrounds/chalkboards/green.jpg");
-    
+
     $('.whos-behind-container.image-background').backstretch("assets/img/backgrounds/chalkboards/green.jpg");
 
     /*
         Countdown initializer
     */
     var now = new Date();
-    var countTo = "2014/09/13";    
+    var countTo = "2015/03/28";    
     $('.timer').countdown(countTo, function(event) {
     	$(this).find('.days').text(event.offset.totalDays);
     	$(this).find('.hours').text(event.offset.hours);
     	$(this).find('.minutes').text(event.offset.minutes);
     	$(this).find('.seconds').text(event.offset.seconds);
     });
-    
+
     /*
         Testimonials
     */
     $('.testimonial-active').html('<p>' + $('.testimonial-single:first p').html() + '</p>');
     $('.testimonial-single:first .testimonial-single-image img').css('opacity', '1');
-    
+
     $('.testimonial-single-image img').on('click', function() {
     	$('.testimonial-single-image img').css('opacity', '0.5');
     	$(this).css('opacity', '1');
@@ -99,7 +99,7 @@ jQuery(document).ready(function() {
     		$(this).fadeIn(400);
     	});
     });
-    
+
     /*
 	    Show latest tweets
 	*/
@@ -110,7 +110,7 @@ jQuery(document).ready(function() {
 		count: 5,
 		loading_text: 'loading ...'
 	});
-	
+
 	$('.latest-tweets .tweets .tweet_list li').append('<span class="tweet_nav"></span>');
 	$('.latest-tweets .tweets .tweet_list li:first .tweet_nav').css('background', '#e8643e');
 	$('.latest-tweets .tweets .tweet_list li .tweet_time').hide();
@@ -137,7 +137,7 @@ jQuery(document).ready(function() {
     var position = new google.maps.LatLng(42.291977,-71.264409);
     $('.contact-address .map').gmap({'center': position, 'zoom': 15, 'disableDefaultUI':true, 'callback': function() {
             var self = this;
-            self.addMarker({'position': this.get('map').getCenter() });	
+            self.addMarker({'position': this.get('map').getCenter() });
         }
     });
 
@@ -172,7 +172,7 @@ jQuery(document).ready(function() {
             }
         });
     });
-    
+
     /*
 	    Contact form
 	*/
@@ -207,6 +207,5 @@ jQuery(document).ready(function() {
 	    });
 	});
 
-    
-});
 
+});
