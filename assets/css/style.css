@@ -111,8 +111,8 @@ nav a:focus { color: #fff; }
 
 .coming-soon .logo a {
 	display: inline-block;
-	width: 450px;
-	height: 150px;
+	width: 600px;
+	height: 315px;
     margin-bottom: -40px;
 	background: url(../img/banner.png) center no-repeat;
     background-size: contain;
@@ -667,4 +667,3 @@ footer {
 .footer-social {
 	text-align: right;
 }
-
